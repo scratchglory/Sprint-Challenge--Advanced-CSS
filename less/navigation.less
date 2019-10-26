@@ -1,12 +1,16 @@
 // Navigation code here
+// add .font-size-color parametricmixin
+// add .flex-center mixin
 
 .navigation {
-  display: flex;
+  //   display: flex;
+  //   justify-content: center;
+  .flex-center();
   flex-direction: column;
-  justify-content: center;
   text-align: center;
   padding-bottom: 12px;
-  background-color: #f4f4f4;
+  background-color: @nav-bg;
+  border-bottom: 2px solid @nav-border;
 
   h1 {
     font-size: 5rem;
@@ -20,8 +24,9 @@
 
     a {
       text-decoration: none;
-      color: @shuttle-gray;
-      font-size: 1.6rem;
+      //   color: @shuttle-gray;
+      //   font-size: 1.6rem;
+      .font-size-color(1.6rem, @shuttle-gray);
     }
   }
 }

@@ -1,4 +1,6 @@
 // Home Content
+// add .every-btn() mixin
+// add .flex-center() mixin
 
 .home {
   .intro {
@@ -59,14 +61,8 @@
       } // p
 
       .btn {
-        width: 25%;
-        background-color: @btn-bg-color;
-        color: white;
-        border-radius: 6px;
-        font-size: 1.6rem;
-        padding: 10px 0;
-        text-align: center;
-        font-weight: bold;
+        // mixin
+        .every-btn();
       } // btn
     } // walk-text
 
