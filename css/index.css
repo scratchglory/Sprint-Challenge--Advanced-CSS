@@ -170,6 +170,7 @@ p {
   border-bottom: 2px solid #f1f1f1;
   width: 100%;
   position: fixed;
+  overflow: hidden;
 }
 .navigation h1 {
   font-size: 5rem;
@@ -220,6 +221,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .intro .horizon {
+    margin-top: 22%;
     max-width: 100%;
   }
 }
@@ -319,4 +321,46 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home form {
+  border: 3px solid #f1f1f1;
+  margin-bottom: 5%;
+}
+.home form h2 {
+  text-align: right;
+}
+.home form .container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+.home form input[type="text"],
+.home form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #f1f1f1;
+  box-sizing: border-box;
+}
+.home form input[type="checkbox"] {
+  margin-top: 16px;
+}
+.home form input[type="submit"] {
+  width: 27%;
+  background-color: #22283a;
+  border-radius: 6px;
+  padding: 8px 0px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #f6f7f8;
+}
+.home form input[type="submit"]:hover {
+  font-size: 1.8rem;
+  color: #23293b;
+  background-color: #f6f7f8;
+  border: 1px solid #23293b;
+}
+.home form input[type="submit"]:hover {
+  opacity: 0.8;
 }

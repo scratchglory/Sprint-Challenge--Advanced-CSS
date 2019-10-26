@@ -117,6 +117,39 @@
 
 // STRETCH
 .home {
+  // Animation
+  //   .animated {
+  //     background-repeat: no-repeat;
+  //     background-position: left top;
+  //     -webkit-animation-duration: 10s;
+  //     animation-duration: 10s;
+  //     -webkit-animation-fill-mode: both;
+  //     animation-fill-mode: both;
+  //   }
+
+  //   @-webkit-keyframes fadeIn {
+  //     0% {
+  //       opacity: 0;
+  //     }
+  //     100% {
+  //       opacity: 1;
+  //     }
+  //   }
+
+  //   @keyframes fadeIn {
+  //     0% {
+  //       opacity: 0;
+  //     }
+  //     100% {
+  //       opacity: 1;
+  //     }
+  //   }
+
+  //   .fadeOut {
+  //     -webkit-animation-name: fadeIn;
+  //     animation-name: fadeIn;
+  //   }
+
   .intro {
     h2 {
       padding: 15px;
@@ -130,6 +163,7 @@
       margin-top: 14%;
       border-radius: 10px;
       @media @phone {
+        margin-top: 22%;
         max-width: 100%;
       } // media
     } // horizon
@@ -228,4 +262,40 @@
       border-radius: 10px;
     } // img
   } // walk-img
+
+  form {
+    border: 3px solid #f1f1f1;
+    margin-bottom: 5%;
+
+    h2 {
+      text-align: right;
+    }
+
+    .container {
+      padding: 20px;
+      background-color: #f1f1f1;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid @nav-border;
+      box-sizing: border-box;
+    }
+
+    input[type="checkbox"] {
+      margin-top: 16px;
+    }
+
+    input[type="submit"] {
+      .every-btn();
+    }
+
+    input[type="submit"]:hover {
+      opacity: 0.8;
+    }
+  }
 } // home
