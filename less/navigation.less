@@ -1,16 +1,53 @@
 // Navigation code here
 // add .font-size-color parametricmixin
 // add .flex-center mixin
+// STRETCH
 
+// .navigation {
+//   //   display: flex;
+//   //   justify-content: center;
+//   .flex-center();
+//   flex-direction: column;
+//   text-align: center;
+//   padding-bottom: 12px;
+//   background-color: @nav-bg;
+//   border-bottom: 2px solid @nav-border;
+
+//   h1 {
+//     font-size: 5rem;
+//     padding: 15px 0;
+//   }
+
+//   .nav {
+//     display: flex;
+//     justify-content: space-evenly;
+//     margin: 0 30%;
+//     @media @phone {
+//       margin: 0;
+//     }
+
+//     a {
+//       text-decoration: none;
+//       //   color: @shuttle-gray;
+//       //   font-size: 1.6rem;
+//       .font-size-color(1.6rem, @shuttle-gray);
+//     }
+//   }
+// }
+
+/// STRETCH
 .navigation {
-  //   display: flex;
-  //   justify-content: center;
   .flex-center();
   flex-direction: column;
   text-align: center;
   padding-bottom: 12px;
   background-color: @nav-bg;
   border-bottom: 2px solid @nav-border;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  opacity: 0.5;
 
   h1 {
     font-size: 5rem;
@@ -24,12 +61,19 @@
     @media @phone {
       margin: 0;
     }
+    opacity: 0.26;
 
     a {
       text-decoration: none;
-      //   color: @shuttle-gray;
-      //   font-size: 1.6rem;
       .font-size-color(1.6rem, @shuttle-gray);
+
+      // STRETCH
+      &:hover {
+        padding: 0 12px;
+        background-color: navy;
+        border-radius: 4px;
+        font-weight: bold;
+      }
     }
   }
 }
